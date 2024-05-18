@@ -28,8 +28,7 @@
   tapping-term-ms = <170>;
 };
 
-/ {};
-
+/ {
     keymap {
         compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -63,11 +62,10 @@ label= "BASE"                              ;
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI P
     &gresc      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp TAB     &kp SPACE   &mo SYM         &mo NAV     &kp BSPC    &kp RET
-                        >;
-                };
+            >;
+        };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
 
         nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -89,8 +87,8 @@ label= "NAVI"                              ;
                 &kp MINUS   &kp PLUS    &kp EXCL    &kp EQUAL   &kp STAR        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
     &trans      &kp UNDER   &kp TILDE   &kp SQT     &kp DQT     &kp AMPS        &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &none       &none
                                         &trans      &trans      &mo ADJ         &trans      &trans    &trans
-        >;
-    };
+            >;
+        };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -116,13 +114,13 @@ label= "SYM"                               ;
                 &kp N0      &kp N4     &kp N5      &kp N6       &kp LBKT        &kp RBKT    &kp N4      &kp N5      &kp N6      &KP N0
     &trans      &kp N0      &kp N1     &kP N2      &kp N3       &kp LPAR        &kp RPAR    &kp N1      &kp N2      &kp N3      &kp N0     &none
                                        &trans      &trans       &trans          &mo ADJ     &trans      &trans
-        >;
-    };
+            >;
+        };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                adjust_layer {
+        adjust_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "ADJ"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -142,9 +140,10 @@ label= "ADJ"                               ;
                 &sys_reset  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none           &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP
     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6          &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                         &trans      &trans      &trans          &trans      &trans      &trans
-        >;
-    };
+            >;
+        };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+    };
 };
