@@ -21,21 +21,13 @@
 #define SYM  2
 #define ADJ  3
 
-&mt {
-  flavor = "tap-preferred";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <200>;
-  require-prior-idle-ms = <125>;
-};
-
 / {
-
-
     behaviors {
         lhr: left_homerow {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
@@ -45,12 +37,14 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <12 13 14>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
