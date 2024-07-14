@@ -32,21 +32,21 @@
 display-name= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     ;     ┃
+//             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃    BSPC   ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     P     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃    ALT    ┃    RET    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   CTRL    ┃   SHIFT   ┃    SPC    ┃   ┃    BSPC   ┃    NAV    ┃    SYM    ┃
+//                                     ┃    CTRL   ┃   SHIFT   ┃    SPC    ┃   ┃    TAB    ┃    NAV    ┃    SYM    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp SEMI
+                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp BSPC
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp P
     &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp RALT    &kp RET
-                                        &kp LCTRL   &kp LSHFT   &kp SPACE       &kp BSPC    &mo NAV     &mo SYM
+                                        &kp LCTRL   &kp LSHFT   &kp SPACE       &kp TAB     &mo NAV     &mo SYM
             >;
         };
 
@@ -57,20 +57,20 @@ display-name= "BASE"                              ;
 display-name= "NAV"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃     ^     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     /     ┃     ?     ┃     !     ┃     \     ┃     |     ┃
+//             ┃     ^     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃           ┃     ?     ┃     !     ┃     |     ┃     ;     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃     +     ┃     -     ┃     =     ┃     ~     ┃   ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃           ┃
+//             ┃           ┃     +     ┃     -     ┃     =     ┃     ~     ┃   ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃     :     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃     '     ┃     "     ┃     `     ┃     _     ┃     &     ┃     *     ┃   ┃   HOME    ┃   PG_DN   ┃   PG_UP   ┃    END    ┃           ┃           ┃
+// ┃     '     ┃     "     ┃     `     ┃     _     ┃     &     ┃     *     ┃   ┃   HOME    ┃   PG_DN   ┃   PG_UP   ┃    END    ┃     /     ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃    TAB    ┃   ┃           ┃           ┃    GUI    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp CARET   &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp FSLH    &kp QMARK   &kp EXCL    &kp BSLH    &kp PIPE
-                &none       &kp PLUS    &kp MINUS   &kp EQUAL   &kp TILDE       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
-    &kp SQT     &kp DQT     &kp GRAVE   &kp UNDER   &kp AMPS    &kp STAR        &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &none       &none
+                &kp CARET   &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &none       &kp QMARK   &kp EXCL    &kp PIPE    &kp SEMI
+                &none       &kp PLUS    &kp MINUS   &kp EQUAL   &kp TILDE       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp COLON
+    &kp SQT     &kp DQT     &kp GRAVE   &kp UNDER   &kp AMPS    &kp STAR        &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp FSLH    &kp BSLH
                                         &trans      &trans      &kp TAB         &trans      &trans      &kp RGUI
             >;
         };
